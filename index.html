@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <script
+    src="https://kit.fontawesome.com/93092a9364.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <main id="container">
+      <p class="index">Player's score</p>
+      <p class="index">Computer's score</p>
+
+      <p class="countPlayer">0</p>
+      <p class="countComputer">0</p>
+
+      <div id="buttons">
+        <button class="rock button">
+          <i class="fas fa-hand-rock rock-icon"></i>
+        </button>
+        <button class="paper button">
+          <i class="fas fa-hand-paper paper-icon"></i>
+        </button>
+        <button class="scissors button">
+          <i class="fas fa-hand-scissors scissors-icon"></i>
+        </button>
+      </div>
+      <div id="round">
+        <p class="round"></p>
+      </div>
+      <button class="restart">Restart</button>
+    </main>
+  </body>
+</html>

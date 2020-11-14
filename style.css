@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #D0d9d6;
+  color: #6d8280;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.8em;
+  font-family: 'Lato',
+    sans-serif;
+}
+
+#container {
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 95vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr 100px 100px;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas: 'pScore cScore'
+    'cPlayer cComputer'
+    'buttons buttons'
+    'para para'
+    'restart restart'
+}
+
+.index {
+  align-self: flex-start;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+
+.countPlayer {
+  grid-area: cPlayer;
+  font-size: 3.4em;
+  font-weight: bold;
+}
+
+.countComputer {
+  grid-area: cComputer;
+  font-size: 3.4em;
+  font-weight: bold;
+}
+
+#buttons {
+
+  grid-area: buttons;
+}
+
+#round {
+  grid-area: para;
+}
+
+.restart {
+  justify-self: center;
+  width: 20%;
+  height: 50%;
+  grid-area: restart;
+  color: #6d8280;
+  font-size: 0.8em;
+}
+
+button {
+  background-color: #dfd3d5;
+  border-style: none;
+  border: 1px #8c8c8c3a solid;
+  border-radius: 10px;
+}
+
+.button {
+  height: 100px;
+  width: 25%;
+  margin-right: 10px;
+
+}
+
+i {
+  font-size: 5em;
+  color: #0d0d0d;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1.4em;
+    margin-left: 5%;
+    margin-right: 5%;
+
+  }
+
+  i {
+    font-size: 3em;
+  }
+
+  .countPlayer {
+
+    font-size: 2.5em;
+
+  }
+
+  .button {
+    width: 160px;
+    margin-bottom: 20px;
+    height: 60px;
+  }
+
+  .countComputer {
+    font-size: 2.5em;
+  }
+
+  .restart {
+    width: 50%;
+    height: 50%;
+
+  }
+
+}
